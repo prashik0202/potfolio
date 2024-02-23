@@ -56,7 +56,7 @@ export const projects = [
     "image" : roomgpt,
     "description" : "In this project we have AI driven application where user can authe using clerk and provide image of room based on select parameters image of room will recreate based on tast",
     "technology" : [
-      { "tname" : "MERN"},
+      { "tname" : "NextJs"},
       { "tname" : "Replicate"},
       { "tname" : "Cloudinary"},
       { "tname" : "TailwindCss"},
