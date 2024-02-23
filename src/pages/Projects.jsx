@@ -1,6 +1,9 @@
 import { projects } from '../data/data';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function Projects() {
+
+  const navigate = useNavigate();
 
   return (
     <main className='min-h-screen  py-20 md:px-20 px-5 '>
@@ -14,12 +17,14 @@ export default function Projects() {
                   {item.description}
                 </p>
                 <div className="card-actions justify-end">
-                  <button 
-                    className="btn btn-accent btn-outline"
-                    onClick={()=>document.getElementById('my_modal_3').showModal()}
-                  >
-                    Open Project
-                  </button>
+                  <Link to={`/projects/${item.id}`}>
+                    <button 
+                      className="btn btn-accent btn-outline"
+                      // onClick={()=>document.getElementById('my_modal_3').showModal()}
+                    >
+                      Open Project
+                    </button>
+                  </Link>
                   <dialog id="my_modal_3" className="modal">
                     <div className="modal-box">
                       <form method="dialog">

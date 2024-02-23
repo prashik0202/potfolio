@@ -8,7 +8,7 @@ const Contact = () => {
         {
           contact.map((item) => (
             <Link to={item.link} target='_blank' key={item.id}>
-              <div className="w-80 h-40 sm:h-80 bg-slate-50 shadow-2xl flex flex-col items-center justify-center border border-primary">
+              <div className="w-80 h-40 sm:h-80 bg-slate-50 shadow-2xl flex flex-col items-center justify-center border border-slate-200">
                 <div>
                   <img src={item.icon} alt={item.name} />
                 </div>
