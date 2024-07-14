@@ -1,4 +1,4 @@
-import resume from "../assets/prashik_gamre_resume.pdf";
+import resume from "../assets/PrashikGamre_Full_Stack_Developer_Resume.pdf";
 
 export default function Home() {
   return (
@@ -9,16 +9,11 @@ export default function Home() {
             <h1 className="text-6xl md:text-8xl font-semibold">
               Prashik Gamre
             </h1>
-            <h1 className="my-3 text-5xl decoration-secondary">
-              FullStack Developer
+            <h1 className="my-10 text-3xl md:text-5xl decoration-secondary">
+              Full Stack Developer <br className="block md:hidden" /> AI/ML
+              Enthusiast
             </h1>
-            {/* <p className="text-sm text-slate-500 my-2">
-              I am passionate about technology and its transformative potential.
-              <br />
-              Exploring innovative solutions, continuous learning in the
-              ever-evolving world of IT
-            </p> */}
-            <button className="btn btn-secondary btn-outline hover:bg-secondary my-1 rounded-none">
+            <button className="btn btn-secondary btn-outline hover:bg-secondary my-2 rounded-none">
               <a href={resume} download>
                 Download Resume
               </a>

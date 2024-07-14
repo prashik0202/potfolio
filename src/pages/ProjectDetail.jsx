@@ -11,8 +11,8 @@ const ProjectDetail = () => {
 
   return (
     <main className="px-5">
-      <div className="min-h-screen py-20 md:py-0 w-full md:flex md:justify-center md:items-center">
-        <div className="w-full md:w-3/4 md:px-10">
+      <div className="min-h-screen py-20 md:py-0 w-full lg:flex items-center md:justify-center md:items-center">
+        <div className="w-full md:w-1/2 md:px-5">
           <h1 className="text-4xl font-semibold decoration-accent mb-5">
             {item.name}
           </h1>
@@ -23,10 +23,10 @@ const ProjectDetail = () => {
               </div>
             ))}
           </div>
-          <h1 className="py-6 text-l text-slate-600">{item.description}</h1>
+          <h1 className="py-6 text-xl text-slate-600">{item.description}</h1>
         </div>
         <div className="px-2">
-          <img src={item.image} alt="img" className="h-200 w-full" />
+          <img src={item.image} alt="img" className="h-300 w-full" />
         </div>
       </div>
     </main>

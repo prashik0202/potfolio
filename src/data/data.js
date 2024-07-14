@@ -17,7 +17,7 @@ export const projects = [
     smalldesc:
       "In this project we have used a API from OpenAI to build a Dalle Clone.We have used MERN Stack and save the generated image and store them to Cloudinary",
     description:
-      "In this project we have build a Dall-E Clone using MERN Stack and implemented user authentication using third party package i.e clerk. In this user can login using its google account or email address and after authentication is done user can create AI generated image by giving prompt and this prompt is send to OpenAI api and it returns the image and we save this image in MongoDB wiht imageURL and real image is stored on cloudinary",
+      "In this project we have build a Dall-E Clone using MERN Stack and implemented user authentication using third party package i.e clerk.In this user can login using its google account or email address and after authentication is done user can create AI generated image by giving prompt and this prompt is send to OpenAI api and it returns the image and we save this image in MongoDB wiht imageURL and real image is stored on cloudinary",
     technology: [
       { tname: "MERN Stack" },
       { tname: "Open-AI" },
@@ -28,17 +28,28 @@ export const projects = [
   },
   {
     id: "MoneyTracker",
-    name: "Money Track a Expense Tracker using MERN Stack",
+    name: "Money Track a Expense Tracker using T3 stack.",
     image: ExpenseTracker,
     smalldesc:
-      "In this project we have Build a custom logic at backend with user authentication where user can track their expenses and visualize their expenses.",
+      "In this project we have implemented Expense tracker which provide some custome functionality like currency options and create your own expense category and analyze your expense.",
     description:
-      "Money Tracker is build using MERN Stack where user authentication is achived using JWT token and all transactions are stored on MongoDB Atlas and user can visualize their transaction and categories their transactions based on their spending, also user can delete the transaction and store every day transaction on this web app.",
-    technology: [{ tname: "MERN Stack" }, { tname: "Material-UI" }],
+      "Money Tracker is build using cutting edge technology contain Next.js 13 for both frotend and backend and React Query for data fetching and sending data, it also used Next.js Server Actions for creating data and all data is stored on postgress SQL and communicate using Prisma ORM. for styling we have use Tailwind Css and Shadcn UI as componenet library. Project has feature like choosing your prefer currency of transaction and also creating user specific expense category which can atach to their expense type. last but no least this web app is authenticated using Clerk Auth.",
+    technology: [
+      { tname: "Next.js" },
+      { tname: "Clerk Auth" },
+      { tname: "Server Action" },
+      { tname: "React-Query" },
+      { tname: "TailwindCss" },
+      { tname: "Shadcn UI" },
+      { tname: "Prisma" },
+      { tname: "React Hook Form" },
+      { tname: "Postgress SQL" },
+      { tname: "Vercel" },
+    ],
   },
   {
     id: "Taski",
-    name: "TASKI all in one chomre extension",
+    name: "TASKI all in one Chrome extension",
     image: Taski,
     smalldesc:
       "In this project we have build a chomre extension where users can manage their daily task and another functionality like expense tracker,password managment are also implemented",
