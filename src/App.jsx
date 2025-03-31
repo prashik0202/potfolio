@@ -12,7 +12,7 @@ import ProjectDetail from './pages/ProjectDetail';
 function App() {
 
   return (
-    <div className='App'>
+    <div className='h-dvh flex flex-col items-center w-full'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>

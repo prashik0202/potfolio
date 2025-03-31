@@ -1,25 +1,21 @@
-import resume from "../assets/PrashikGamre_Full_Stack_Developer_Resume.pdf";
+import resume from "../assets/Prashik_Gamre_Software_Engineer.pdf";
 
 export default function Home() {
   return (
-    <main>
-      <div className="hero min-h-screen">
-        <div className="hero-content text-center">
-          <div className="max-w-xxl">
-            <h1 className="text-6xl md:text-8xl font-semibold">
-              Prashik Gamre
-            </h1>
-            <h1 className="my-10 text-3xl md:text-5xl decoration-secondary">
-              Full Stack Developer <br className="block md:hidden" /> AI/ML
-              Enthusiast
-            </h1>
-            <button className="btn btn-secondary btn-outline hover:bg-secondary my-2 rounded-none">
-              <a href={resume} download>
-                Download Resume
-              </a>
-            </button>
-          </div>
-        </div>
+    <main className="min-h-dvh p-10 md:p-20 lg:p-32 flex flex-col items-center w-full">
+      <div className="max-w-xxl flex flex-col gap-5 items-center">
+        <h1 className="text-6xl md:text-8xl font-semibold text-center">
+          Prashik Gamre
+        </h1>
+        <h1 className="text-3xl md:text-5xl decoration-secondary text-center">
+          Full Stack Developer <br className="block md:hidden" /> AI/ML
+          Enthusiast
+        </h1>
+        <button className="px-5 py-3 rounded-md bg-neutral-900 text-neutral-100 mt-10">
+          <a href={resume} download>
+            Download Resume
+          </a>
+        </button>
       </div>
     </main>
   );
